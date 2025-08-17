@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+
+//All function definition
 void block();
 void pyramid();
 void pyramid_with_numbers();
@@ -10,11 +12,13 @@ void inverse_pyramid_number();
 void triangle();
 void inverse_triangle();
 
+//Main function
 int main(){
     inverse_triangle();
     return 0;
 }
 
+//Definition of all the patterns
 void inverse_triangle(){
     for(int i=0;i<5;i++){
 
