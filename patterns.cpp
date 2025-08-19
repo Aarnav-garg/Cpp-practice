@@ -11,14 +11,48 @@ void inverse_pyramid();
 void inverse_pyramid_number();
 void triangle();
 void inverse_triangle();
+void full_triangle();
+void full_pyramid();
+void pyramid_with_0_1();
 
 //Main function
 int main(){
-    inverse_triangle();
+    pyramid_with_0_1();
     return 0;
 }
 
-//Definition of all the patterns
+void pyramid_with_0_1(){
+    int counter=1;
+    for(int i=0; i<5; i++){
+
+        for(int j=0; j<=i; j++){
+
+            cout << counter;
+            (counter==0?counter=1:counter=0);
+        }
+        cout << "\n";
+    }
+}
+
+void full_pyramid(){
+    for(int i=0; i<9; i++){
+
+        for(int j=0; j<5; j++){
+
+            if(i>=j && i+j<=8)
+                cout << "*";
+            else 
+                cout << " ";
+        }
+        cout << "\n";
+    }
+}
+
+void full_triangle(){
+    triangle();
+    inverse_triangle();
+}
+
 void inverse_triangle(){
     for(int i=0;i<5;i++){
 
